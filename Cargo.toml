@@ -3,5 +3,9 @@ name = "eff-wordlist"
 version = "0.1.0"
 authors = ["Cyryl Płotnicki <cyplo@cyplo.net>"]
 edition = "2018"
+description= "Rust crate packaging EFF wordlist"
+readme = "README.md"
+repository = "https://github.com/cyplo/eff-wordlist-rs"
+license = "AGPL-3.0"
 
 [dependencies]
