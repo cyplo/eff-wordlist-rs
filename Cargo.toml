@@ -9,3 +9,5 @@ repository = "https://github.com/cyplo/eff-wordlist-rs"
 license = "AGPL-3.0"
 
 [dependencies]
+rand = "0.6.5"
+arrayvec = "0.4.10"
