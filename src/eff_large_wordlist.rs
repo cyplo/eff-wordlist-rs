@@ -1,4 +1,4 @@
-pub const LARGE: &'static [(u32, &'static str)] = &[
+pub const LARGE: &[(u32, &str)] = &[
     (11111, "abacus"),
     (11112, "abdomen"),
     (11113, "abdominal"),
