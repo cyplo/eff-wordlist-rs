@@ -1,6 +1,6 @@
 [package]
 name = "eff-wordlist"
-version = "0.1.2"
+version = "1.0.0"
 authors = ["Cyryl Płotnicki <cyplo@cyplo.net>"]
 edition = "2018"
 description= "Rust crate packaging EFF wordlist"
