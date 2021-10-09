@@ -43,8 +43,7 @@ pub mod large {
     /// let word = eff_wordlist::large::random_word();
     /// ```
     pub fn random_word() -> &'static str {
-        let mut rng = OsRng::new().expect("Not able to operate without random source.");
-        LIST.choose(&mut rng).unwrap().1
+        LIST.choose(&mut OsRng).unwrap().1
     }
 
 }
@@ -72,8 +71,7 @@ pub mod short {
     /// let word = eff_wordlist::short::random_word();
     /// ```
     pub fn random_word() -> &'static str {
-        let mut rng = OsRng::new().expect("Not able to operate without random source.");
-        LIST.choose(&mut rng).unwrap().1
+        LIST.choose(&mut OsRng).unwrap().1
     }
 
 }
