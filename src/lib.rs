@@ -22,8 +22,8 @@ mod eff_short_wordlist;
 
 /// large wordlist
 pub mod large {
-    use rand::rngs::OsRng;
     use rand::seq::SliceRandom;
+    use rand::thread_rng;
 
     /// The wordlist as an array of tuples - the first element being the dice roll and second the equivalent word
     ///
@@ -43,16 +43,15 @@ pub mod large {
     /// let word = eff_wordlist::large::random_word();
     /// ```
     pub fn random_word() -> &'static str {
-        let mut rng = OsRng::new().expect("Not able to operate without random source.");
+        let mut rng = thread_rng();
         LIST.choose(&mut rng).unwrap().1
     }
-
 }
 
 /// short wordlist
 pub mod short {
-    use rand::rngs::OsRng;
     use rand::seq::SliceRandom;
+    use rand::thread_rng;
 
     /// The wordlist as an array of tuples - the first element being the dice roll and second the equivalent word
     ///
@@ -72,8 +71,7 @@ pub mod short {
     /// let word = eff_wordlist::short::random_word();
     /// ```
     pub fn random_word() -> &'static str {
-        let mut rng = OsRng::new().expect("Not able to operate without random source.");
+        let mut rng = thread_rng();
         LIST.choose(&mut rng).unwrap().1
     }
-
 }
